@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "updated": "2026-10-15",
+  "listings": [
+    {
+      "id": "quitman-pharmacy",
+      "name": "Quitman Pharmacy (example)",
+      "category": "pharmacy",
+      "tier": "featured",
+      "address": "101 W Franklin St",
+      "city": "Quitman",
+      "county": "Clarke",
+      "state": "MS",
+      "zip": "39355",
+      "lat": 32.0404,
+      "lng": -88.7223,
+      "phone": "6017765555",
+      "website": "https://example.com",
+      "email": "info@example.com",
+      "hours": [
+        "",
+        "08:30-17:30",
+        "08:30-17:30",
+        "08:30-17:30",
+        "08:30-17:30",
+        "08:30-17:30",
+        "09:00-13:00"
+      ],
+      "note": "Free blood-pressure check anytime"
+    },
+    {
+      "id": "clarke-family-clinic",
+      "name": "Clarke Family Clinic (example)",
+      "category": "clinic",
+      "tier": "basic",
+      "address": "220 Archusa Ave",
+      "city": "Quitman",
+      "county": "Clarke",
+      "state": "MS",
+      "zip": "39355",
+      "lat": 32.0421,
+      "lng": -88.719,
+      "phone": "6017765000",
+      "website": "https://example.com",
+      "email": "",
+      "hours": [
+        "",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-12:00",
+        ""
+      ],
+      "note": "A1c screening first Tuesday of the month"
+    },
+    {
+      "id": "meridian-foot",
+      "name": "East MS Foot & Ankle (example)",
+      "category": "podiatrist",
+      "tier": "free",
+      "address": "1510 23rd Ave",
+      "city": "Meridian",
+      "county": "Lauderdale",
+      "state": "MS",
+      "zip": "39301",
+      "lat": 32.37,
+      "lng": -88.703,
+      "phone": "6014835555",
+      "website": "",
+      "email": "",
+      "hours": [
+        "",
+        "08:00-16:30",
+        "08:00-16:30",
+        "08:00-16:30",
+        "08:00-16:30",
+        "08:00-12:00",
+        ""
+      ],
+      "note": ""
+    },
+    {
+      "id": "support-quitman",
+      "name": "Clarke County Diabetes Support Group (example)",
+      "category": "support",
+      "tier": "free",
+      "address": "First Baptist Church fellowship hall",
+      "city": "Quitman",
+      "county": "Clarke",
+      "state": "MS",
+      "zip": "39355",
+      "lat": 32.041,
+      "lng": -88.723,
+      "phone": "",
+      "website": "",
+      "email": "",
+      "hours": [
+        "",
+        "",
+        "",
+        "18:00-19:00",
+        "",
+        "",
+        ""
+      ],
+      "note": "Meets 2nd Wednesday. Everyone welcome."
+    }
+  ]
+}

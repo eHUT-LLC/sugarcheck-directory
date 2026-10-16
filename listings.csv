@@ -1,0 +1,5 @@
+id,name,category,tier,address,city,county,state,zip,lat,lng,phone,website,email,sun,mon,tue,wed,thu,fri,sat,note,logo
+quitman-pharmacy,Quitman Pharmacy (example),pharmacy,featured,101 W Franklin St,Quitman,Clarke,MS,39355,32.0404,-88.7223,6017765555,https://example.com,info@example.com,,08:30-17:30,08:30-17:30,08:30-17:30,08:30-17:30,08:30-17:30,09:00-13:00,Free blood-pressure check anytime,
+clarke-family-clinic,Clarke Family Clinic (example),clinic,basic,220 Archusa Ave,Quitman,Clarke,MS,39355,32.0421,-88.7190,6017765000,https://example.com,,,08:00-17:00,08:00-17:00,08:00-17:00,08:00-17:00,08:00-12:00,,A1c screening first Tuesday of the month,
+meridian-foot,East MS Foot & Ankle (example),podiatrist,free,1510 23rd Ave,Meridian,Lauderdale,MS,39301,32.3700,-88.7030,6014835555,,,,08:00-16:30,08:00-16:30,08:00-16:30,08:00-16:30,08:00-12:00,,,
+support-quitman,Clarke County Diabetes Support Group (example),support,free,First Baptist Church fellowship hall,Quitman,Clarke,MS,39355,32.0410,-88.7230,,,,,,,18:00-19:00,,,,Meets 2nd Wednesday. Everyone welcome.,
