@@ -4,6 +4,7 @@ Turn listings.csv into sugarcheck-directory.json.
 
     python build.py            # writes sugarcheck-directory.json next to this file
     python build.py --check    # validate only
+    python build.py --fixture  # tests/fixtures/directory-examples.json: every row, active/expires ignored
 
 Upload the JSON to the URL in lib/directory.ts (DIRECTORY_URL). The app refreshes once a day.
 
@@ -27,7 +28,7 @@ def num(v):
     v = (v or "").strip()
     return float(v) if v else None
 
-def main(check_only=False):
+def main(check_only=False, fixture=False):
     rows, errors, ids, skipped = [], [], set(), []
     today = datetime.date.today().isoformat()
     with SRC.open(newline="", encoding="utf-8") as f:
@@ -40,8 +41,9 @@ def main(check_only=False):
             if active not in ("yes", "no", ""): errors.append(f"{rid}: active must be yes or no, got '{active}'")
             expires = (r.get("expires") or "").strip()
             if expires and not re.match(r"^\d{4}-\d{2}-\d{2}$", expires): errors.append(f"{rid}: expires must be YYYY-MM-DD, got '{expires}'")
-            if active == "no": skipped.append(f"{rid}: active = no"); continue
-            if expires and expires < today: skipped.append(f"{rid}: expired {expires}"); continue
+            if not fixture:
+                if active == "no": skipped.append(f"{rid}: active = no"); continue
+                if expires and expires < today: skipped.append(f"{rid}: expired {expires}"); continue
             if r["category"] not in CATS: errors.append(f"{rid}: bad category '{r['category']}'")
             if r["tier"] not in TIERS: errors.append(f"{rid}: bad tier '{r['tier']}'")
             hours = []
@@ -66,8 +68,13 @@ def main(check_only=False):
     doc = {"version": 1, "updated": datetime.date.today().isoformat(), "listings": rows}
     if check_only:
         print(f"OK: {len(rows)} listings"); return
+    if fixture:
+        fx = HERE.parent / "tests" / "fixtures" / "directory-examples.json"
+        fx.parent.mkdir(parents=True, exist_ok=True)
+        fx.write_text(json.dumps(doc, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"wrote {fx}: {len(rows)} listings (fixture)"); return
     OUT.write_text(json.dumps(doc, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"wrote {OUT.name}: {len(rows)} listings, updated {doc['updated']}")
 
 if __name__ == "__main__":
-    main("--check" in sys.argv)
+    main("--check" in sys.argv, "--fixture" in sys.argv)
