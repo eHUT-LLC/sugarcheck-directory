@@ -13,7 +13,7 @@ HERE = pathlib.Path(__file__).parent
 SRC = HERE / "listings.csv"
 OUT = HERE / "sugarcheck-directory.json"
 CATS = {"pharmacy","clinic","dietitian","podiatrist","eye","support","dental","other"}
-TIERS = {"free","basic","featured"}
+TIERS = {"free","basic","featured","founding","county"}
 HOURS_RE = re.compile(r"^\d{1,2}:\d{2}-\d{1,2}:\d{2}$")
 DAYS = ["sun","mon","tue","wed","thu","fri","sat"]
 

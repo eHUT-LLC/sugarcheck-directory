@@ -105,6 +105,32 @@
         ""
       ],
       "note": "Meets 2nd Wednesday. Everyone welcome."
+    },
+    {
+      "id": "ochsner-clarkdale-bradley",
+      "name": "Doris N. Bradley, FNP-BC — Ochsner Health Center Clarkdale",
+      "category": "clinic",
+      "tier": "featured",
+      "address": "6905 Hwy 145 S",
+      "city": "Meridian",
+      "county": "Lauderdale",
+      "state": "MS",
+      "zip": "39301",
+      "lat": 32.2286,
+      "lng": -88.7002,
+      "phone": "6012823271",
+      "website": "https://www.ochsner.org/doctors/doris-n-bradley-fnp-bc/",
+      "email": "",
+      "hours": [
+        "",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-17:00",
+        "08:00-12:00",
+        ""
+      ],
+      "note": "Primary care provider at the Clarkdale location"
     }
   ]
 }
