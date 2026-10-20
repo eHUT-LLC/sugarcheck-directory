@@ -1,0 +1,4 @@
+{
+  "weights": { "county": 6, "featured": 3, "founding": 1, "basic": 1, "free": 0 },
+  "badges":  { "basic": "Community Supporter", "featured": "Featured Supporter", "county": "Community Impact Partner", "founding": "Founding Sponsor" }
+}

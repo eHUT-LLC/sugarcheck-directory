@@ -1,0 +1,3 @@
+id,title,description,org,area,event_date,publish_date,expires,image_url,url,sponsored,sponsor_id,approved
+example-screening,Free A1c screening (example),"Walk in, no appointment. Bring your medication list. This row is an example and is held back by approved=no.",Clarke Family Clinic (example),Clarke County,2026-11-05,2026-10-20,2026-11-06,,https://example.com/screening,no,,no
+example-walk,Tuesday evening walking group (example),"Meets at the courthouse square at 6 pm. All paces. Example row, held back.",Quitman Parks (example),Quitman,,2026-10-20,2026-12-31,,,no,,no

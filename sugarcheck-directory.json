@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated": "2026-10-17",
+  "version": 2,
+  "updated": "2026-10-20",
   "listings": [
     {
       "id": "ochsner-clarkdale-bradley",
@@ -28,5 +28,22 @@
       ],
       "note": "Primary care provider at the Clarkdale location"
     }
-  ]
+  ],
+  "announcements": [],
+  "resources": [],
+  "meta": {
+    "weights": {
+      "county": 6,
+      "featured": 3,
+      "founding": 1,
+      "basic": 1,
+      "free": 0
+    },
+    "badges": {
+      "basic": "Community Supporter",
+      "featured": "Featured Supporter",
+      "county": "Community Impact Partner",
+      "founding": "Founding Sponsor"
+    }
+  }
 }
