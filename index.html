@@ -1,49 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SugarCheck by eHUT™</title>
-<meta name="description" content="A free Android app for people managing diabetes in east Mississippi: carb scanner, gentle reminders, plate builder, local care directory. No ads, no account, nothing leaves your phone.">
-<style>
-  :root { color-scheme: light dark; --ink:#1a1a1a; --muted:#555; --bg:#fffdf7; --card:#fff; --line:#e6e0cc; --brand:#f4a300; --brandDark:#b88900; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#f1ede2; --muted:#b9b3a3; --bg:#1b1a16; --card:#24221c; --line:#3a372e; --brand:#f0c23b; --brandDark:#f0c23b; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:44rem; margin:0 auto; padding:40px 16px 64px; }
-  h1 { font-size:2.2rem; line-height:1.1; margin:0 0 8px; } h1 span { color:var(--brandDark); }
-  h2 { font-size:1.2rem; margin:32px 0 8px; }
-  p, li { margin:0 0 12px; } .lead { font-size:1.2rem; } .muted { color:var(--muted); }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin:16px 0; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; } .card b { display:block; margin-bottom:4px; }
-  .cta { display:inline-block; background:var(--brand); color:#1a1a1a; font-weight:800; text-decoration:none; padding:12px 20px; border-radius:999px; margin:6px 8px 6px 0; }
-  .ghost { background:transparent; border:2px solid var(--brand); color:var(--ink); }
-  a { color:var(--brandDark); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8E8">
+  <meta name="description" content="SugarCheck by eHUT is a free, local-first Android diabetes education app with food label tools, reminders, and a community care directory.">
+  <title>SugarCheck by eHUT™ | Diabetes Education & Community Support</title>
+  <style>
+    :root{--cream:#fff8e8;--paper:#fffdf7;--white:#fff;--gold:#f6a800;--gold-dark:#926000;--ink:#211d18;--muted:#70685c;--line:#e6dcc8;--shadow:0 10px 30px rgba(58,41,12,.06)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}a{color:var(--gold-dark)}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}h1,h2,h3{line-height:1.2;letter-spacing:-.025em}h1{font-size:clamp(2.5rem,6vw,4.3rem);margin:12px 0 20px}h2{font-size:clamp(1.65rem,3vw,2.2rem);margin:0 0 14px}h3{font-size:1.16rem;margin:0 0 9px}p{margin:0 0 15px}.container{max-width:1100px;margin:0 auto;padding:0 24px}.site-header{border-bottom:1px solid var(--line);background:var(--paper)}.header-inner{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.brand{font-size:1.3rem;font-weight:850;line-height:1.2;text-decoration:none;color:var(--ink)}.brand small{display:block;font-size:.78rem;font-weight:550;color:var(--muted);letter-spacing:.04em}.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--ink);font-weight:650}.nav a:hover{text-decoration:underline}.hero{padding:74px 0 56px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(270px,.8fr);align-items:center;gap:48px}.eyebrow{color:var(--gold-dark);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:850}.lead{font-size:1.17rem;max-width:620px;color:#423c32}.muted{color:var(--muted)}.button-row{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 0}.btn{display:inline-block;background:var(--gold);color:var(--ink);border:2px solid var(--gold);border-radius:999px;text-decoration:none;font-weight:800;padding:12px 22px;line-height:1.3}.btn:hover{filter:brightness(.97)}.btn-outline{background:transparent}.app-preview{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:20px;box-shadow:var(--shadow);max-width:370px;margin:auto;width:100%}.preview-title{font-size:1.25rem;font-weight:850;line-height:1.3}.preview-greeting{font-weight:750;margin:20px 0}.sponsor-strip{border:2px solid var(--gold);background:var(--white);border-radius:16px;padding:18px;text-align:center;margin:18px 0 20px}.sponsor-strip small{display:block;color:var(--muted)}.scan-tile{border-radius:18px;background:var(--gold);padding:26px 16px;text-align:center;font-weight:850;font-size:1.2rem}.preview-footer{display:flex;justify-content:space-around;gap:8px;margin:18px 0 0;font-size:.9rem}.section{padding:52px 0}.section-heading{max-width:700px;margin-bottom:24px}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.feature-card,.panel{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.feature-card p{color:var(--muted);margin:0}.feature-icon{display:grid;place-items:center;width:44px;height:44px;background:#fff1c9;border-radius:13px;font-size:1.35rem;margin-bottom:16px}.community{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.community-card{background:var(--white);border:2px solid var(--gold);border-radius:22px;padding:28px}.community-card small{color:var(--muted)}.notice{font-size:.95rem;color:var(--muted);max-width:800px}.footer{padding:36px 0 55px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{text-decoration:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:800px){.hero-grid,.community-grid{grid-template-columns:1fr}.hero{padding:50px 0 35px}.app-preview{margin:16px auto 0}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}}@media(max-width:560px){.container{padding:0 18px}.header-inner{align-items:flex-start}.feature-grid{grid-template-columns:1fr}.hero{padding:40px 0 25px}.section{padding:38px 0}.btn{width:100%;text-align:center}.button-row{gap:10px}.community-card{padding:22px}}
+  </style>
 </head>
 <body>
-<main>
-<h1>SugarCheck <span>by eHUT™</span></h1>
-<p class="lead">A free Android app for people managing Type 1 or Type 2 diabetes. It identifies, educates and reminds. Your care team governs.</p>
-<p class="muted">No ads. No account. Nothing about you leaves your phone.</p>
-
-<div class="grid">
-  <div class="card"><b>Scan a label</b>Barcode or a photo of the Nutrition Facts panel. Carbs, carb choices, added sugar, fiber, sodium — and a plain green / yellow / red band.</div>
-  <div class="card"><b>Build a plate</b>Type what’s on the plate — cornbread, greens, fried catfish — and get the meal total. Half, one or two portions in food words.</div>
-  <div class="card"><b>Gentle reminders</b>Sugar check, meds, water, a walk. Done or Later. Quiet hours. Your first name and nothing else.</div>
-  <div class="card"><b>Diabetes care near you</b>Pharmacies, clinics, dietitians, foot and eye care — hours, open-now, tap for directions.</div>
-  <div class="card"><b>Sugar glossary</b>What Type 1 and Type 2 are, A1c, carb choices, and 40 names sugar hides under on a label.</div>
-  <div class="card"><b>Kitchen mode</b>Three big buttons for wet hands and reading glasses on the counter.</div>
-</div>
-
-<h2>Get it</h2>
-<p>Currently in family testing in Clarke and Lauderdale counties, Mississippi. Google Play listing coming. To join the test, email <a href="mailto:ehut_llc@outlook.com?subject=SugarCheck%20test">ehut_llc@outlook.com</a>.</p>
-
-<h2>For pharmacies and clinics</h2>
-<p>The app stays free because local diabetes-care businesses are listed in it.</p>
-<a class="cta" href="sponsors.html">Sponsor tiers →</a>
-<a class="cta ghost" href="privacy.html">Privacy policy</a>
-
-<p class="muted" style="margin-top:40px">eHut LLC · Quitman, Mississippi · Built by Corey Bradley. The app is an awareness tool, not a medical device, and not a substitute for advice from your doctor, nurse practitioner or dietitian.</p>
-</main>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SugarCheck by eHUT™<small>Learn. Check. Connect.</small></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#community">Community</a>
+        <a href="sponsors.html">Sponsorships</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Free diabetes education and everyday support</p>
+          <h1>Small steps.<br>More confidence.<br><span style="color:var(--gold-dark)">Better-informed choices.</span></h1>
+          <p class="lead">SugarCheck by eHUT™ is a free Android app that helps adults managing Type 1 or Type 2 diabetes understand food labels, build everyday habits, and find community care resources.</p>
+          <p class="muted">Designed to be local-first. No account required. Some food and directory lookups use internet connections; learn more in our <a href="privacy.html">privacy policy</a>.</p>
+          <div class="button-row">
+            <a class="btn" href="#features">Explore SugarCheck</a>
+            <a class="btn btn-outline" href="mailto:ehut_llc@outlook.com?subject=SugarCheck%20Android%20testing">Ask about app testing</a>
+          </div>
+        </div>
+        <div class="app-preview" aria-label="Illustrative SugarCheck app homepage preview">
+          <div class="preview-title">SugarCheck<br>by eHUT™</div>
+          <div class="preview-greeting">Good morning.</div>
+          <div class="sponsor-strip"><small>Brought to you by</small><strong>Local community supporters</strong></div>
+          <div class="scan-tile">Scan a food label</div>
+          <div class="preview-footer"><span>Kitchen mode</span><span>Steps today</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">What you can explore</p><h2>Practical tools for everyday diabetes education</h2><p class="muted">Features are based on the current SugarCheck app experience. Availability may vary during testing.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">▤</div><h3>Scan a food label</h3><p>Explore carbohydrate and other nutrition information from a barcode or Nutrition Facts photo.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">◒</div><h3>Kitchen mode</h3><p>A simplified interface designed for quick use while preparing meals.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">◷</div><h3>Gentle reminders</h3><p>Set everyday reminders for the routines you choose.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">⌖</div><h3>Diabetes care near you</h3><p>Browse a local directory of pharmacies, clinics, and other care resources.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">Aa</div><h3>Sugar glossary</h3><p>Find approachable explanations of common diabetes and nutrition terms.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">♡</div><h3>Community connections</h3><p>Discover community updates, resources, and the supporters helping keep SugarCheck free.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section community" id="community">
+      <div class="container community-grid">
+        <div><p class="eyebrow">Supported by our community</p><h2>Local support makes a difference.</h2><p>Community supporters help eHUT offer SugarCheck without charging app users. Sponsor recognition is clearly labeled and separate from health education content.</p><a class="btn" href="sponsors.html">Explore sponsorships</a></div>
+        <div class="community-card"><small>In the app</small><h3>Supported by our community</h3><p>Local pharmacies, clinics, and businesses can help keep SugarCheck free.</p><strong>Our sponsors</strong><p class="muted" style="margin-top:18px;margin-bottom:0;font-size:.9rem">Illustrative website representation of an existing app section; not an active sponsor listing.</p></div>
+      </div>
+    </section>
+    <section class="section"><div class="container"><div class="panel"><p class="eyebrow">Get involved</p><h2>Help shape SugarCheck</h2><p>Interested in Android app testing, suggesting a local care resource, or learning about community sponsorship? Reach out to eHUT.</p><a class="btn" href="mailto:ehut_llc@outlook.com?subject=SugarCheck%20inquiry">Contact eHUT</a></div><p class="notice" style="margin-top:22px">SugarCheck provides educational information and reminders. It does not diagnose, treat, or replace guidance from your clinician or diabetes care team.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div><strong>SugarCheck by eHUT™</strong><br><span class="muted">eHUT LLC · Quitman, Mississippi</span></div><div class="footer-links"><a href="index.html">Home</a><a href="sponsors.html">Sponsorships</a><a href="privacy.html">Privacy policy</a><a href="mailto:ehut_llc@outlook.com">Contact</a></div></div></footer>
 </body>
 </html>
