@@ -3,74 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SugarCheck by eHUT™ — Privacy Policy</title>
+<meta name="description" content="How SugarCheck by eHUT handles local records, scanning, Health Connect, sharing, community content and your privacy choices.">
+<title>Privacy Policy · SugarCheck by eHUT</title>
 <style>
-  :root { color-scheme: light dark; --ink:#1a1a1a; --muted:#555; --bg:#fffdf7; --line:#e6e0cc; --brand:#b88900; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#f1ede2; --muted:#b9b3a3; --bg:#1b1a16; --line:#3a372e; --brand:#f0c23b; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:44rem; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:1.8rem; line-height:1.2; margin:0 0 4px; } h1 span { color:var(--brand); }
-  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
-  p, li { margin:0 0 12px; } ul { padding-left:1.2em; } .meta { color:var(--muted); font-size:.95rem; }
-  a { color:var(--brand); } code { font-size:.95em; }
+:root{color-scheme:light;--bg:#fff7e8;--paper:#fff;--ink:#24251f;--muted:#5e5b51;--gold:#855b08;--line:#dfd7c5;--green:#e8f3e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:800px;margin:auto;padding:36px 22px 60px}header{border-bottom:2px solid var(--gold);padding-bottom:24px}.brand{font-weight:750;color:var(--gold);margin:0 0 12px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 14px}h2{font-size:1.3rem;line-height:1.3;margin:38px 0 12px}p{margin:0 0 16px}li{margin:0 0 10px}ul{padding-left:24px}a{color:var(--gold);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}.meta,footer{font-size:.92rem;color:var(--muted)}.summary{background:var(--green);border:1px solid #acbfa7;border-radius:18px;padding:22px;margin:26px 0}.summary h2{margin-top:0}.contents{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px}.contents ul{margin-bottom:0}section{scroll-margin-top:20px}footer{border-top:1px solid var(--line);margin-top:38px;padding-top:22px}strong{font-weight:750}@media(max-width:420px){main{padding:26px 18px 40px}.summary,.contents{padding:18px}}@media print{body{background:white;font-size:11pt}main{max-width:none;padding:0}.contents{display:none}h2{break-after:avoid}.summary{break-inside:avoid}a{color:inherit}}
 </style>
 </head>
-<body>
-<main>
-<h1>SugarCheck <span>by eHUT™</span> — Privacy Policy</h1>
-<p class="meta">Effective October 16, 2026 · eHut LLC, Quitman, Mississippi</p>
+<body><main>
+<header><p class="brand">SugarCheck by eHUT™</p><h1>Privacy policy</h1><p class="meta">Effective November 4, 2026 · eHUT LLC · Quitman, Mississippi</p><p>SugarCheck helps adults understand food labels, organize reminders and find community resources. This policy explains how the Android app handles information, which features contact outside services, and the choices you have.</p></header>
+<div class="summary"><h2>At a glance</h2><ul>
+<li><strong>No required SugarCheck account.</strong> Your profile, saved foods, reminders and optional GLP-1 records are kept in the app's storage on your phone.</li>
+<li><strong>Some features use outside services.</strong> Food lookups, community downloads and Google's scanning diagnostics send information off the phone. These requests can include technical information such as an internet address.</li>
+<li><strong>You control sharing.</strong> When you share a log, Android lets you choose the receiving person or app.</li>
+<li><strong>Sponsors support the app.</strong> Sponsorship does not give a business access to your personal health records.</li>
+<li><strong>You can clear app data.</strong> Settings → Clear my data removes app records and requests cleanup of temporary label photos. Copies already shared outside SugarCheck are handled by their recipients.</li>
+</ul></div>
+<nav class="contents" aria-label="Privacy policy sections"><strong>On this page</strong><ul><li><a href="#local">Information on your phone</a></li><li><a href="#scanning">Camera and scanning</a></li><li><a href="#services">Outside services</a></li><li><a href="#health">Health Connect and reminders</a></li><li><a href="#sharing">Sharing, support and links</a></li><li><a href="#sponsors">Sponsorship and promotion</a></li><li><a href="#choices">Deletion and permissions</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<section id="local"><h2>Information on your phone</h2>
+<p>The app stores information you enter or save, including your first name, diabetes category, reminder settings and completion records, saved food and meal information, and feature preferences. It also caches food lookup results and community content so some information remains available offline.</p>
+<p>If you enable the GLP-1 companion, it stores the medicine you select, your schedule, shot dates and sites, the strength you enter, symptom selections, notes, weight entries and insurance-preparation checklist selections. Optional height and other feature preferences may also be stored. Free-text notes contain whatever you choose to write.</p>
+<p>These records use Android app-private storage. SugarCheck does not provide an eHUT account or cloud synchronization service for these records. Android application backup is disabled in the app configuration. App-private storage should not be understood as a promise of database-level encryption or protection against someone who can access your unlocked or compromised phone.</p>
+</section>
+<section id="scanning"><h2>Camera and label scanning</h2>
+<p>The camera reads barcodes and captures Nutrition Facts panels. Google's ML Kit barcode and text-recognition components process label images on the device. SugarCheck does not upload your label photos or recognized label text for this scanning feature.</p>
+<p><strong>Temporary photos.</strong> Taking a label photo creates a temporary file. The app attempts to delete it after processing, including unsuccessful scans. Cleanup can fail, or a crash can interrupt it. The app also attempts camera-cache cleanup when it starts and when you use Clear my data. A temporary file can remain until cleanup succeeds. Clearing app storage or uninstalling the app removes its private storage through Android.</p>
+<p><strong>Google's diagnostics.</strong> ML Kit collects device and application information, installation identifiers, performance measurements, configuration and feature-event information, and error codes for diagnostics and usage analytics. These identifiers can distinguish an installation even without your name. Google describes transmission over HTTPS and its handling in the <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. This SDK activity is separate from the label image processing on your phone.</p>
+</section>
+<section id="services"><h2>Food lookups and community downloads</h2>
+<p><strong>Open Food Facts.</strong> Barcode lookups send the barcode to Open Food Facts. Food searches can send your typed search words when an outside lookup is used. The service receives the request and ordinary network information, such as an internet address and app identification. Search text can reveal what you type. The app does not attach your SugarCheck profile or GLP-1 log to these requests. See the <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a>.</p>
+<p><strong>GitHub Pages.</strong> SugarCheck downloads the directory, announcements, resource links and related configuration from eHUT's GitHub Pages site. It can also download approved sponsor logos and announcement images. Downloads happen when content is refreshed, including automatic refreshes and actions such as pull-to-refresh. Previously downloaded content can be cached on your phone.</p>
+<p>The app restricts downloaded community image URLs to eHUT's GitHub Pages host. Hosting providers still receive internet addresses and request information and handle it under their own practices. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Clearing SugarCheck's local data does not erase records retained by an outside service.</p>
+<p><strong>Location.</strong> Near me asks for location permission to sort care listings by distance on your phone. That sorting does not send your coordinates to eHUT or include them in food lookups. You can decline location access and use the other directory filters. Opening directions in a map app is a separate action governed by that app's practices.</p>
+</section>
+<section id="health"><h2>Health Connect steps and local reminders</h2>
+<p>If you grant Health Connect step-reading permission, SugarCheck reads today's step total to display it on Home and may include a step-count snapshot in that day's scheduled reminders. Home can refresh the count while it is open. SugarCheck reads steps and does not write step records to Health Connect.</p>
+<p>The app does not send Health Connect step information to eHUT or sponsors or use it for advertising. Although SugarCheck does not keep a separate step-history log, a snapshot may remain in a scheduled or delivered notification. Revoking access prevents future permitted reads but does not automatically retract notification copies already created.</p>
+<p>Reminders are scheduled locally through Android. Your name, reminder message, or a step snapshot may be visible in notifications, including on the lock screen according to your device settings. You can change notification permissions, quiet hours and lock-screen settings.</p>
+</section>
+<section id="sharing"><h2>Sharing, support and external links</h2>
+<p><strong>Sharing a log.</strong> Share this log with my clinic prepares information from the GLP-1 companion and opens Android's share menu. The export can contain your first name, selected medicine and entered strength, shot history, symptoms, notes, weight, height, calculated BMI and insurance-preparation information. Check the content and select the intended recipient. The receiving app or person may retain or forward a copy under their own practices.</p>
+<p><strong>Support and community submissions.</strong> Report a problem opens a draft message that can include the app version, device model and Android version. You choose what to add and whether to send it. If you email eHUT, submit a resource or event, or request a business listing, eHUT receives your contact details and whatever information you send. eHUT uses that correspondence to respond, investigate, review or maintain the submission. Please avoid unnecessary patient information in messages. Contact us to request deletion of correspondence. Some records may need to be retained for an unresolved request or applicable recordkeeping obligations.</p>
+<p>Approved business details, event information and resource descriptions may be published for other users to see. Submit only information you have permission to make public.</p>
+<p><strong>External services.</strong> Website, directions, call, registration, social-media and payment links open other apps or services. Those services handle the information you provide under their own policies. Sharing SugarCheck's public link does not attach your personal SugarCheck records. An external checkout handles any payment details you enter there.</p>
+</section>
+<section id="sponsors"><h2>Sponsors and paid promotion</h2>
+<p>SugarCheck includes local supporter recognition and can display paid directory or community placements. Payment does not give a sponsor access to your profile, medication records, reminders, saved foods, Health Connect steps or precise location.</p>
+<p>eHUT does not sell your personal app records or use them to select sponsor placements. The app's sponsor display is based on the community directory and placement configuration. Sponsor reporting can include app-wide installation figures available through Google Play. Such figures do not identify who viewed or tapped an individual placement.</p>
+<p>If a sponsor promotion is also published on an external social platform, that platform may provide its own aggregate reach or interaction figures. Those figures concern that platform's posts and are separate from SugarCheck health records. The platform's privacy policy applies when you use it.</p>
+</section>
+<section id="choices"><h2>Your choices, retention and deletion</h2>
+<p><strong>Local records.</strong> Records remain in app storage until you change or delete them, clear app data, or remove the app. Cached information can also be replaced as content is refreshed.</p>
+<p><strong>Clear my data.</strong> In Settings, this control cancels pending SugarCheck reminders and deletes the local profile, saved foods, reminders, GLP-1 records, preferences and app caches. It also attempts to remove remaining temporary camera files. If cleanup fails or you still see information, use Android's app-storage controls or uninstall SugarCheck.</p>
+<p>This action does not remove logs already shared with another person or app, source step records in Health Connect, emails already sent, public submissions, or outside-service records. Manage those copies with the relevant recipient, service or eHUT contact address. Previously delivered notifications can be dismissed through Android.</p>
+<p><strong>Permissions.</strong> You can revoke camera, location and notification permissions in Android settings and step-reading permission in Health Connect. Features that need the permission will be limited. Other app features remain available.</p>
+</section>
+<section><h2>Security, adult use and policy changes</h2>
+<p>SugarCheck relies on Android's app-storage and permission controls. Its food and community network endpoints use HTTPS, and Google's ML Kit documentation describes HTTPS transmission for SDK diagnostics. No device or transmission method can guarantee complete security. Keep your phone protected with a screen lock and current security updates.</p>
+<p>SugarCheck is intended for adults and is not directed at children under 13. If you believe a child has sent personal information to eHUT, contact us so we can investigate and address it.</p>
+<p>When practices change, eHUT will update this page and its effective date. The app and store listing should link to the current policy.</p>
+</section>
+<section id="contact"><h2>Contact eHUT</h2><p>eHUT LLC<br>Quitman, Mississippi<br><a href="mailto:ehut_llc@outlook.com">ehut_llc@outlook.com</a></p><p>For a privacy or deletion request, use “SugarCheck privacy request” in the subject. Describe the request without sending unnecessary medical information.</p></section>
+<footer><p>SugarCheck by eHUT™ · Android app privacy policy</p><p><a href="index.html">SugarCheck home</a> · <a href="sponsors.html">Community sponsorships</a></p></footer>
+</main></body></html>
 
-<p>SugarCheck is made by eHut LLC. It is free, has no ads, and keeps your information on your phone. This page says exactly what the app touches and where it goes. If anything here changes, the date above changes and the app's Settings screen links to the new version.</p>
-
-<h2>The short version</h2>
-<ul>
-<li>There is no account. We don't know who you are.</li>
-<li>Your first name, your diabetes type, your reminders and your saved foods stay on your phone. We never see them.</li>
-<li>Nothing about you is sold, shared, or used for advertising.</li>
-<li>Three things leave your phone, and only when you ask: a barcode number, the words you type to find a food, and a request for the business directory. None of them carries your name or anything about you.</li>
-<li>You can erase everything with one tap in Settings → Clear my data.</li>
-</ul>
-
-<h2>What the app keeps on your phone</h2>
-<p><strong>First name and diabetes type.</strong> You give these when you set up the app. The name appears in your first reminder of the day. Both live in a small database on your phone and nowhere else.</p>
-<p><strong>Reminders.</strong> The times and words of your reminders, and whether you tapped Done today. Stored on your phone, scheduled through Android's own notification system.</p>
-<p><strong>Saved foods.</strong> Any food label you choose to save, with its carbohydrate figures. Stored on your phone.</p>
-<p><strong>A lookup cache.</strong> Copies of the last 200 food-label results and the business directory, so the app works without a signal. Stored on your phone.</p>
-<p>None of this is backed up anywhere by us. If you lose the phone, it is gone. If you uninstall the app, Android deletes all of it.</p>
-
-<h2>What leaves your phone, and when</h2>
-<p><strong>A barcode number</strong> — only when you scan one. It goes to Open Food Facts (a non-profit, open food database) so the app can look up that product's label. The request carries the barcode and the app's name, nothing about you. Open Food Facts' own policy: <a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a></p>
-<p><strong>The words you type to find a food</strong> — only when you use "Build a plate" and the app doesn't already know the food. The same database searches for them. The words, nothing else.</p>
-<p><strong>A request for the business directory</strong> — once a day when the app opens, to download the list of local pharmacies and clinics. The file is hosted on GitHub Pages; like any web request, the hosting provider sees your phone's internet address for the duration of the download. We do not receive or keep it.</p>
-<p>That is the complete list.</p>
-
-<h2>Things the app uses but never stores or sends</h2>
-<p><strong>Camera.</strong> Used to read a barcode or take a picture of a Nutrition Facts panel. The picture is read on the phone itself and discarded. No photo is saved and no photo leaves the phone.</p>
-<p><strong>Location.</strong> Asked for only when you tap "Near me" on the Directory screen, used to sort that list by distance, and forgotten when you leave the screen. Never saved, never sent. Decline it and the app sorts by county instead.</p>
-<p><strong>Steps (Health Connect).</strong> If you allow it, the app reads today's step total from Android's Health Connect each time you open it, shows it on the Home screen, and may add it to the rest of that day's reminders (for example, "Check before dinner? · 4,120 steps as of 2:15 pm"). The app only reads; it never writes to Health Connect, never stores the count, and never sends it anywhere. Turn it off any time in Health Connect's own settings; the Settings screen has a button that takes you there. Health Connect data is used only to show you your own step count and for nothing else. It is never used for advertising, never shared with anyone, and never sold.</p>
-<p><strong>Notifications.</strong> Reminders are local notifications created by the app on your phone. No notification service, no server.</p>
-
-<h2>Glucose and medical information</h2>
-<p>SugarCheck never asks for, stores, or sends a blood sugar reading, an A1c, a medication name, or a dose. It is an awareness tool, not a medical device, and it is not a substitute for advice from your doctor, nurse practitioner, or dietitian.</p>
-
-<h2>Sponsors and the directory</h2>
-<p>Local businesses pay to be listed in the directory and shown in the sponsor strip. They receive the number of installs reported by the Google Play Store for the app as a whole. They never receive anything about any individual — not who opened the app, who saw their name, who tapped it, or where anyone is. The app does not count or report any of that.</p>
-
-<h2>Children</h2>
-<p>SugarCheck is for adults managing their own diabetes. It is not directed at children under 13 and we do not knowingly collect anything from them — which, since the app collects nothing from anyone, is also just how it works.</p>
-
-<h2>Your choices</h2>
-<ul>
-<li><strong>See everything the app has:</strong> it is all on the Settings and Reminders screens.</li>
-<li><strong>Erase everything:</strong> Settings → Clear my data. This deletes your name, type, reminders, saved foods and the cache from the phone. There is nothing anywhere else to erase.</li>
-<li><strong>Camera, location, notifications, steps:</strong> each is a standard Android permission you can revoke in your phone's Settings or in Health Connect. The app keeps working; the feature that needed it goes quiet.</li>
-</ul>
-
-<h2>Changes</h2>
-<p>If a future version sends anything new off the phone, this page will say so before that version is released, with the date updated at the top.</p>
-
-<h2>Contact</h2>
-<p>eHut LLC, Quitman, Mississippi<br><a href="mailto:ehut_llc@outlook.com">ehut_llc@outlook.com</a></p>
-</main>
-</body>
-</html>
